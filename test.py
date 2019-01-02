@@ -8,7 +8,10 @@ def test_answer():
     
 def test_answer2():
     assert func(3) == 4
-
+    
+def test_answer23():
+    assert func(3) == 5
+    
 def f():
     raise SystemExit(1)
 
@@ -49,3 +52,5 @@ def test_broken():
 def test_mytest():
     with pytest.raises(SystemExit):
         f()
+def test_answer2():
+    assert func(3) == 4
