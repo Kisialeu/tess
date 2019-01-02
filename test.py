@@ -30,7 +30,7 @@ def test_success():
 
 def test_failure():
     """this test fails"""
-    assert True
+    assert False
 
 
 def test_skip():
@@ -41,5 +41,6 @@ def test_skip():
 def test_broken():
     pass
 
-def test_broken2():
-    raise OSerror
+def test_mytest():
+    with pytest.raises(SystemExit):
+        f()
