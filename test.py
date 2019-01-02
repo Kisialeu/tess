@@ -40,3 +40,6 @@ def test_skip():
 
 def test_broken():
     pass
+
+def test_broken2():
+    raise OSerror
