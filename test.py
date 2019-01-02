@@ -20,8 +20,8 @@ def funco(x):
 def test_answer2():
     assert funco(3) == 4
 
-//def test_negative():
- //   assert funco(499) == 500
+def test_negative():
+    assert funco(499) == 500
     
 def test_success():
     """this test succeeds"""
