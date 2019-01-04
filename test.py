@@ -1,10 +1,16 @@
 import pytest
+import allure
+
+
+@allure.step("123")
+def foo_test(a):
+    return a + 1
 
 def func(x):
     return x + 1
 
 def test_answer():
-    assert func(3) == 4
+    assert foo_test(3) == 4
     
 def test_answer2():
     assert func(3) == 4
